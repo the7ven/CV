@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Développeur Web Frontend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .cv-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;   
+            
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .competences {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .competence-group {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .experience {
+            margin-bottom: 25px;
+        }
+
+        .experience-title {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .experience-company {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .experience-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .experience ul {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .formation {
+            margin-bottom: 15px;
+        }
+
+        .langues-interets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 20px;
+            }
+
+            .competences {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .profil-pic{
+                border: 3px solid  #3498db;
+                border-radius: 50%;
+                width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <img src="image/PROFIL.jpg" alt="profil" class="profil-pic">
+            <h1>Nkwel Corneille Stephane</h1>
+            <p class="contact-info">
+                Abidjan | nkwelcorneille777@outlook.fr | +225 0757471552
+            </p>
+            <p><strong>Développeur Web Frontend </strong></p>
+        </header>
+
+        <section class="section">
+            <h2>Profil</h2>
+            <p>
+                Professionnel polyvalent avec une solide expérience en gestion d'équipe et relation client, 
+                en cours de reconversion vers le développement web frontend. Fort de compétences en leadership 
+                et en résolution de problèmes acquises dans le commerce et la restauration, je combine créativité 
+                technique et sens du service pour créer des expériences utilisateur innovantes.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Compétences Techniques</h2>
+            <div class="competences">
+                <div class="competence-group">
+                    <h3>Langages & Frameworks</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+                <div class="competence-group">
+                    <h3>Outils</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="competence-group">
+                    <h3>Méthodologies</h3>
+                    <ul>
+                        <li>Agile</li>
+                        <li>Scrum</li>
+                        <li>Responsive Design</li>
+                        <li>UX/UI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Expérience Professionnelle</h2>
+            
+            <div class="experience">
+                <p class="experience-title">Développeur Web Frontend (Formation/Projets)</p>
+                <p class="experience-company">Freelance </p>
+                <p class="experience-date"> Depuis juillet 2023</p>
+                <ul>
+                    <li>Développement de projets concrets utilisant HTML, CSS et JavaScript</li>
+                    <li>Création d'interfaces utilisateur responsives et intuitives</li>
+                    <li>Collaboration sur des projets d'équipe en utilisant Git</li>
+                    <li>Portfolio de projets personnels démontrant la maîtrise des technologies frontend</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <p class="experience-title">Chef d'Équipe en Cuisine</p>
+                <p class="experience-company">Friend'Food</p>
+                <p class="experience-date"> De juin 2019 -Janvier 2025</p>
+                <ul>
+                    <li>Management d'une équipe en cuisine</li>
+                    <li>Optimisation des processus de production et gestion des stocks</li>
+                    <li>Mise en place de procédures pour améliorer l'efficacité opérationnelle</li>
+                    <li>Formation et développement des compétences de l'équipe</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <p class="experience-title">Responsable Commercial</p>
+                <p class="experience-company">Food And Beverage Industry (Mme Su')</p>
+                <p class="experience-date"> 2016 - 2019</p>
+                <ul>
+                    <li>Développement et gestion d'un portefeuille clients</li>
+                    <li>Élaboration et mise en œuvre de stratégies commerciales</li>
+                    <li>Négociation de contrats et suivi de la relation client</li>
+                    <li>Management d'une équipe commerciale</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Formation</h2>
+           
+            <div class="formation">
+                <p class="experience-title">Genie Electrique </p>
+                <p class="experience-company">IUT DE DOUALA</p>
+                <p class="experience-date">2013-2015</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Langues & Centres d'intérêt</h2>
+            <div class="langues-interets">
+                <div>
+                    <h3>Langues</h3>
+                    <ul>
+                        <li>Français (natif)</li>
+                        <li>Anglais (moyen)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Centres d'intérêt</h3>
+                    <ul>
+                        <li>lectures , voyages, musiques, football, nouvelles technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
